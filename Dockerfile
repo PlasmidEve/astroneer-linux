@@ -8,8 +8,7 @@ RUN apt update && \
     apt install -y software-properties-common
 
 RUN add-apt-repository -y multiverse && \
-    apt install -y flatpak lib32gcc-s1
-
+    apt install -y flatpak lib32gcc-s1 curl
 
 RUN mkdir /opt/steamcmd && curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zxvf - -C /opt/steamcmd
 
