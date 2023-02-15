@@ -1,4 +1,4 @@
-FROM debian:bullseye-slim
+FROM ubuntu:22.04
 
 ENV TIMEZONE=Europe/Rome \
     DEBIAN_FRONTEND=noninteractive
